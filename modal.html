@@ -1,0 +1,11 @@
+<template name="modal">
+  {{#if modalName}}
+    <div id="modal" class="modal {{modalClass}}">
+      <div class="modal-overlay"></div>
+      <div class="modal-body {{modalClassNames}}">
+        <a class="modal-close ss-icon">plus</a>
+        {{> Template.dynamic template=modalName}}
+      </div>
+    </div>
+  {{/if}}
+</template>
